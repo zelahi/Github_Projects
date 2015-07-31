@@ -1,0 +1,53 @@
+GO Practice Tutorials
+
+Learning GO - Using this repository to find examples for myself easier
+
+Practice.go
+------------
+Hello World - standard way to write Go
+Variables - declare variables in Go
+Constants - constants in Go
+For loops - writing for loops in Go
+Arrays - arrays in Go
+
+Slices.go
+---------
+Data structures in Go which are typed only by the elements they contain.
+1. Create a new empty slice
+2. Add items and print length
+3. Copy() - Create a copy of a slice
+4. Append() - add an item to a slice
+5. Create a Multi-dimensional Slice
+
+Maps.go
+--------
+Data structure in Go where items are stored as [key, value] pair
+1. Create an empty map
+2. add items to a map
+3. Return a value for a specific key
+4. Get length of map
+5. Delete() - delete items from a map
+6. -, - check if a value is present in a map
+7. Declare and initialize a map 
+
+Range.go
+--------
+Explores the range function in Go 
+1. Sum all numberes in an array
+2. Show indicies in an array
+3. Iterate over a map 
+4. Iterate over a string to print unicode
+
+Functions.go
+------------
+Explore different functions in Go
+1. Basic functions and how to use them
+2. Multiple return value functions
+3. Variadic functions - functions called with any number of trailing arguements
+4. Anonymous functions - form closures. Store functions together with an enviornment
+
+Advanced.go
+-----------
+1. Structures - structures in Go
+2. Pass by value vs. pass by reference
+3. Pointers

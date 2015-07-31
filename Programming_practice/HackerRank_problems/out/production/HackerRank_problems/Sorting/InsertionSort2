@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+/**
+ * Created by elahiz on 4/29/2015.
+ *
+ * Class Name: InsertionSort2.java
+ *
+ * Description: Insertion Sort2, loopInvariant, and Runtime analysis HackerRank challenge
+ */
+public class InsertionSort2 {
+    public static void insertionSortPart2(int[] ar)
+    {
+        // Fill up the code for the required logic here
+        // Manipulate the array as required
+        // The code for Input/Output is already provided
+        int swapCount = 0;
+
+        for(int i = 0; i < ar.length; i++){
+            int temp = ar[i];
+            int j = i;
+
+            while(j > 0 && ar[j - 1] > temp){
+                ar[j] = ar[j-1];
+                j = j - 1;
+                swapCount ++;
+
+            }
+
+            ar[j] = temp;
+            printArray(ar);  //print array after every swap
+
+        }
+
+        //print the number of swaps
+        System.out.println(swapCount);
+    }
+
+
+    private static void printArray(int[] ar) {
+        for(int n: ar){
+            System.out.print(n+" ");
+        }
+        System.out.println("");
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int s = in.nextInt();
+        int[] ar = new int[s];
+        for(int i=0;i<s;i++){
+            ar[i]=in.nextInt();
+        }
+        insertionSortPart2(ar);
+
+    }
+}
