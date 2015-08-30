@@ -1,0 +1,18 @@
+def calc_larget_palindrome(a,b):
+	return a * b;
+
+def reverse_num(num):
+	return str(num) == str(num)[::-1]
+
+
+def main():
+	print "In main"
+	for num in range(999,100):
+		for num2 in range(999,100):
+			product = calc_largest_palindrome(num, num2)
+			isPalindrome = reverse_num(product)
+			if product == isPalindrome:
+				print product
+
+if __name__=='__main__':
+    main()
