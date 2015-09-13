@@ -15,7 +15,7 @@ public class LargestRectangle {
 
 
         for(int i = 0; i < height.length; i++){
-            int value = building.pop()
+            int value = building.pop();
         }
         return maxArea;
     }
